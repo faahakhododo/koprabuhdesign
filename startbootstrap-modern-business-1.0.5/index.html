@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="KOPRABUH">
+    <meta name="author" content="">
+
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,300,200&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+        <!-- Script to Activate modal -->
+    <script>
+        $(document).ready(function(){
+            $(".img-responsive.img-portfolio.img-hover").click(function(){
+                $("#tampilModal").attr("src",$(this).attr("src"));
+                $("#myModal").modal("show");
+            });
+            
+            $("#bs-example-navbar-collapse-1 a").on('click', function(event) {
+                $(this).css({"color": "#00b300"});
+                var str = $(this).parent().text();
+                if(str.indexOf("Home")!='-1' || str.indexOf("Gallery")!='-1' || str.indexOf("About us")!='-1'){
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                      scrollTop: $(hash).offset().top
+                    }, 800, function(){
+                      window.location.hash = hash;
+                    });
+                }
+                
+            });
+
+            $(".nav.navbar-nav.navbar-right li a").mouseenter(function(){
+                 if($(this).parent().attr("class")!='active'){
+                    $(this).css({"color": "black"});
+                 }
+            });
+            $(".nav.navbar-nav.navbar-right li a").mouseleave(function(){
+                 if($(this).parent().attr("class")!='active'){
+                    $(this).css({"color": "#00b300"});
+                 }
+            });
+            
+        });
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                 <a class="pull-left" href="#"><img src="images/logo.png" alt="Koprabuh"></a>
+                 <p class="navbar-text">
+                    <span class="font-thin">
+                    Clean the Air, Plant the Trees,<br/>Bersihkan Udara, Tanam Pohon
+                   </span>
+                 </p>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="#about">About us</a>
+                    </li>                    
+                    <li class="">
+                        <a href="#gallery">Gallery</a>
+                    </li>
+                    <li class="">
+                        <a href="treeadopt.html">Tree adoption</a>
+                    </li>                    
+                    <li class="">
+                        <a href="register.html">Register</a>
+                    </li>
+                    <li class="">
+                        <a href="login.html">Login</a>
+                    </li>
+                    <li>
+                        <p>Welcome, Guess</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="row" id="home">
+        <div class="col-sm-12">
+            <img class="img-responsive" src="images/depan.jpg" alt="Cover">
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <!-- Marketing Icons Section -->
+        <div class="row" >
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    <span class="font-thin">Program Penyerapan CO2</span>
+                </h1>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="glyphicon glyphicon-globe"></i> Keadaan Sekarang</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                          Dunia memanas karena aktivitas Manusia. sejak masa sebelum revolusi industri, tahun 1850, manusia telah menempatkan 1,700 milliar ton CO2 di atmosfir melalui pernafasan, pembakaran Bahan Bakar Fosil, batu bara dan minyak untuk transportasi darat, laut, udara , kebutuhan listrik industri dan rumah tangga, memasak dll.  Sekitar separuh nya diserap oleh Bumi, kebanyakan oleh lautan, separuh lagi memanaskan bumi, mengakibatkan cuaca ekstrim, topan, kekeringan, banjir, gagal panen sebagai bencana yang menerpa bumi termasuk mempengaruhi geo politik.  
+                          Ketakutan di <kbd>MASA MENDATANG</kbd> sesungguhnya adalah ketidak-sanggupan menghasilkan cukup <kbd>MAKANAN</kbd> dan <kbd>UDARA BERSIH</kbd> bagi anak cucu kita yang sedang kita hadapi. Pencarian energy alternatif tenaga surya, air, angin terus dikembangkan, namun menggantikan Bahan Bakar Berbasis Fosil dengan Biomas sangat Penting. Membangun <kbd>HUTAN TERKELOLA</kbd> berdampingan dengan <kbd>HUTAN ALAMIAH</kbd> menghasilkan O2, menyerap CO2, menahan air, menghasilkan biomas yang diolah dengan proses Pyrolysis memisahkan BBM dari Bio Char sebagai penyubur tanah wujud tindakan nyata menyerap CO2 dan ditanam kembali dalam tanah untuk berabad2, konservasi alam dan mengentaskan kemiskinan perambah hutan.
+                      </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="glyphicon glyphicon-grain"></i> CO2 Sequestration Program</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p>
+                            <kbd>Jadi apa yang dapat kita lakukan?</kbd> kita dapat membantu mengurangi kadar CO2 di udara dengan menanam pohon. 1 pohon dapat menyerap CO2 sebesar 135.27 kg dalam 1 tahun. Serap CO2 yang anda hasilkan setiap tahunnya agar anak cucu kita tidak mewarisi CO2 yang kita hasilkan selama masa hidup kita.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4><i class="glyphicon glyphicon-tree-deciduous"></i> Tree Adoption</h4>
+                    </div>
+                    <div class="panel-body">
+                        <p> <kbd>Apabila anda terkendala</kbd> waktu, lahan, bibit dan keahlian merawat tanamannya, KOPRABUH menyediakan solusi <kbd>ADOPSI POHON.</kbd>
+                        </p>
+                        <a href="#" class="btn btn-primary">Adopsi Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Features Section -->
+        <div class="row" id="about" style="padding-top: 55px">
+            <div class="col-lg-12">
+                <h1 class="page-header"> <span class="font-thin">About Us</span></h1>
+            </div>
+            <div class="col-md-6">
+                 <blockquote>
+                    <p class="font-thin">
+                        Koperasi Produsen Anugerah Bumi Hijau <kbd>"KOPRABUH"</kbd> adalah koperasi primer bidang produksi yang beranggotakan para pemilik lahan, berpusat di Jakarta dengan wilayah kerja di seluruh Indonesia. 
+                           KOPRABUH dibentuk untuk mengedepankan koperasi dalam suatu usaha perkebunan berskala industry besar, dengan program kerja yang disebut <kbd>4F2C</kbd>, <kbd>Four Factors For Fighting Climate Change</kbd>, dengan melibatkan sebanyak mungkin petani pemilik lahan sebagai anggota agar secara bersama dapat mengakses semua sumber daya yang dibutuhkan dalam usaha pertanian berskala industry besar,  seperti, lahan penananam seluas-luasnya, tenaga manusia, pendanaan, produksi, pemasaran, legalitas, dukungan pemerintah, perawatan pelayanan pra dan paska pemasaran yang berkelanjutan. 
+                           4F2C melaksanakan Nawa Cita Pemerintahan Bapak Jokowi-JK, merealisasikan harapan masyarakat  tani yang pada umum nya berada pada tingkat ekonomi lemah di Indonesia, yang tidak pernah membayangkan dapat berusaha secara modern, efektif, efisien, pada skala industry pertanian besar, agar mendapat kesempatan menikmati usaha pertanian  yang dapat bersaing dalam pasar global. 
+                           Sejak ekspos di Kementerian Desa Pembangunan Daerah Tertinggal dan Transmigrasi Orang tua pada tanggal 12 oktober 2015  dunia melihat orang tua dan muda, petani, pengusaha, professional, Ibu rumah tangga, sangat bersemangat dan antusias berpartisipasi dalam industry pertanian modern yang memberikan mereka kesempatan  sebagai pemilik, pekerja, pengguna dan yang menikmati hasil penjualan produknya.
+                           Inti usaha KOPRABUH pada bidang industry pertanian/kehutanan, dengan komoditas utama menanam pohon yang akan digunakan sebagai biomasa, bahan baku energy terbarukan,  pohon yang ditanam dinamakan KOPRABUH Tree atau disingkat K-tree.<br>
+                           <i class="fa fa-certificate"></i> <kbd>License No : 1260/BH/M.KUKM.2/XI/2015</kbd><br>
+                           <i class="fa fa-home"></i> <kbd>Alamat : DBS Bank Tower 28th Floor Ciputra World One, Jl. Prof. Dr. Satrio Kav 3-5 Jakarta 12940, Indonesia</kbd><br>
+                          <i class="fa fa-envelope-o"></i> <kbd>Email :<a href="mailto:koprabuh@gmail.com?subject=feedback"> koprabuh@gmail.com</a></kbd><br>
+                           <i class="fa fa-phone"></i> <kbd> Telp : +6221-29888285</kbd><br>
+                           <i class="fa fa-fax"></i> <kbd>Fax : +6221-29888201</kbd>
+                    </p>
+                    <footer>KOPRABUH</footer>
+                 </blockquote>
+            </div>
+            <div class="col-md-6">
+                <img class="img-responsive aboutus" src="images/bg2.jpg" alt="logo">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Call to Action Section -->
+
+        <!-- Portfolio Section -->
+        
+            <div class="row" id="gallery" style="padding-top: 55px">
+                <div class="col-lg-12">
+                    <h1 class="page-header"> <span class="font-thin">Gallery</span></h1>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img class="img-responsive img-portfolio img-hover" src="images/Gallery/1.jpg" alt="">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img class="img-responsive img-portfolio img-hover" src="images/Gallery/2.jpg" alt="">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img class="img-responsive img-portfolio img-hover" src="images/Gallery/3.jpg" alt="">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img class="img-responsive img-portfolio img-hover" src="images/Gallery/4.jpg" alt="">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img class="img-responsive img-portfolio img-hover" src="images/Gallery/5.jpg" alt="">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img class="img-responsive img-portfolio img-hover" src="images/Gallery/6.jpg" alt="">
+                </div>
+            </div>
+        
+        <!-- /.row -->
+
+        <!-- MODAL -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                 <img id="tampilModal" class="img-responsive" src="images/Gallery/3.jpg" alt="">
+                            </div>
+                        </div>
+                    <!-- /Modal content-->
+                </div>
+            </div>
+        <!-- /.MODAL -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; KOPRABUH 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
+
+</body>
+
+</html>
